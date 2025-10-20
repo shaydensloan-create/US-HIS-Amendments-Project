@@ -1,1 +1,279 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧩 “Amendment Museum” Exhibit Project</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #1e3c72;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .exhibit {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .exhibit:hover {
+            transform: translateY(-5px);
+        }
+        
+        .exhibit-header {
+            border-bottom: 3px solid #1e3c72;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .exhibit-title {
+            color: #1e3c72;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .exhibit-number {
+            background: #1e3c72;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+        
+        .section {
+            margin: 1.5rem 0;
+        }
+        
+        .section-title {
+            color: #2a5298;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: "📜";
+            margin-right: 0.5rem;
+        }
+        
+        .section-title.context::before {
+            content: "🕰️";
+        }
+        
+        .section-title.cases::before {
+            content: "⚖️";
+        }
+        
+        .section-title.today::before {
+            content: "🌟";
+        }
+        
+        .content {
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 0.5rem;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .case-box {
+            background: white;
+            border-left: 4px solid #2a5298;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+        
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .exhibit {
+                padding: 1.5rem;
+            }
+            
+            .exhibit-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏛️ The Constitutional Amendments Museum 🏛️</h1>
+        <p class="subtitle">Important Changes to the U.S. Constitution</p>
+    </header>
+    
+    <div class="container">
+        <!-- Amendment V -->
+        <div class="exhibit">
+            <div class="exhibit-header">
+                <span class="exhibit-number">Amendment V</span>
+                <h2 class="exhibit-title">The Fifth Amendment</h2>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title summary">Summary</h3>
+                <div class="content">
+                    <p>You can't be forced to testify against yourself in court. The government can't try you twice for the same crime or take your property without paying you fairly.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title context">Why It Was Added</h3>
+                <div class="content">
+                    <p>Added in 1791 as part of the Bill of Rights. The Founders wanted to protect people from being forced to confess like they were in England.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title cases">Key Case</h3>
+                <div class="content">
+                    <div class="case-box">
+                        <strong>Miranda v. Arizona (1966)</strong> - This is why police read you your rights when you're arrested. The Supreme Court said police have to tell people they can stay silent.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title today">Today</h3>
+                <div class="content">
+                    <p>People use this right all the time in court to avoid answering questions that might make them look guilty. It protects everyone's rights during criminal investigations.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Amendment XIII -->
+        <div class="exhibit">
+            <div class="exhibit-header">
+                <span class="exhibit-number">Amendment XIII</span>
+                <h2 class="exhibit-title">The Thirteenth Amendment</h2>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title summary">Summary</h3>
+                <div class="content">
+                    <p>Slavery and forced labor are illegal in the United States, except as punishment for crimes.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title context">Why It Was Added</h3>
+                <div class="content">
+                    <p>Ratified in 1865 after the Civil War. Lincoln's Emancipation Proclamation freed some slaves, but this amendment ended slavery everywhere in the country permanently.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title cases">Controversy</h3>
+                <div class="content">
+                    <div class="case-box">
+                        <strong>The "Punishment" Exception</strong> - The amendment allows slavery as punishment for crime. After the Civil War, many Southern states used this to arrest Black people and force them to work.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title today">Today</h3>
+                <div class="content">
+                    <p>This amendment is used to fight human trafficking. Some people debate whether prison labor systems are fair because of the "punishment" exception.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Amendment XVIII -->
+        <div class="exhibit">
+            <div class="exhibit-header">
+                <span class="exhibit-number">Amendment XVIII</span>
+                <h2 class="exhibit-title">The Eighteenth Amendment</h2>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title summary">Summary</h3>
+                <div class="content">
+                    <p>Banned making, selling, and transporting alcohol. This was called Prohibition. It was repealed by the 21st Amendment in 1933.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title context">Why It Was Added</h3>
+                <div class="content">
+                    <p>Ratified in 1919. People believed alcohol caused poverty, crime, and family problems. They thought banning it would make society better.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title cases">What Happened</h3>
+                <div class="content">
+                    <div class="case-box">
+                        <strong>Organized Crime</strong> - People didn't stop drinking. Gangsters like Al Capone made millions selling illegal alcohol. Secret bars called speakeasies opened everywhere.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title today">Today</h3>
+                <div class="content">
+                    <p>Prohibition shows that banning something doesn't always work and can create bigger problems. It's the only amendment that was completely repealed. People use it as an example in debates about drug laws.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Constitutional Amendments Project | 8th Grade Social Studies</p>
+    </footer>
+</body>
+</html>
